@@ -1,0 +1,14 @@
+$primary-color: #3B413C;
+
+@import 'animate.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@font-face {
+  font-family: 'Noto Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+}
+
+input, textarea {
+  font-family: 'Noto Sans';
+}
