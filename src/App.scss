@@ -1,6 +1,7 @@
-$primary-color: #3B413C;
+$primary-color: #DDDBF1;
 
 @import 'animate.css';
+@import 'loaders.css/src/animations/cube-transition.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
@@ -11,4 +12,18 @@ $primary-color: #3B413C;
 
 input, textarea {
   font-family: 'Noto Sans';
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }
