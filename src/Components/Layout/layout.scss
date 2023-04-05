@@ -50,41 +50,18 @@
     max-height: 90%;
 
     h1 {
-      font-size: 53px;
+      font-size: 3rem;
       font-family: sans-serif;
-      color: #fbfbf2;
+      color: #F4F3EE;
       font-weight: 400;
-      margin-top: 0;
+      margin-top: 0.8rem;
       position: relative;
-      margin-bottom: 40px;
-      left: 10px;
+      margin-bottom: 0.8rem;
 
-      &::before {
-        content: '<h1>';
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 18px;
-        position: absolute;
-        margin-top: -10px;
-        left: -10px;
-        opacity: 0.6;
-        line-height: 18px;
-      }
-
-      &::after {
-        content: '</h1>';
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 18px;
-        line-height: 18px;
-        position: absolute;
-        left: -30px;
-        bottom: -20px;
-        margin-left: 20px;
-        opacity: 0.6;
-      }
     }
     p {
       font-size: 13px;
-      color: #fff;
+      color: #F4F3EE;
       font-family: sans-serif;
       min-width: fit-content;
       animation: pulse 1s;

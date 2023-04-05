@@ -1,71 +1,90 @@
-.contact-form {
-    width: 100%;
-    margin-top: 20px;
+.contact-page {
+   display: block;
+   text-align: center;
 
-    ul {
+    .text-zone {
         background-color: #889696;
-        padding: 1rem;
-        margin: 0;
-    
-        li {
-            padding: 0;
+        border-radius: 25px;
+        border: 2px solid #463F3A;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-top: 20px;
+
+
+        ul {
+            
+            border-radius: 4px;
+            padding: 1rem;
             margin: 0;
-            list-style: none;
-            margin-bottom: 10px;
-            overflow: hidden;
-            display: block;
-            position: relative;
-            opacity: 0;
-            animation: fadeInUp 2s 2s;
-            animation-fill-mode: forwards;
-            clear: both;
-        }
+            
+        
+            li {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                margin-bottom: 10px;
+                overflow: hidden;
+                display: block;
+                position: relative;
+                opacity: 0;
+                animation: fadeInUp 2s 2s;
+                animation-fill-mode: forwards;
+                clear: both;
+        
+            }
 
-        li.half {
-            width: 49%;
-            margin-left: 2%;
-            float: left;
-            clear: none;
+            li.half {
+                width: 48%;
+                margin-left: 2%;
+                float: left;
+                clear: none;
 
-            &:first-child {
-                margin-left: 0;
+                &:first-child {
+                    margin-left: 0;
+                }
             }
         }
-    }
 
-    input[type='text'],
-    input[type='email'] {
-        width: 100%;
-        border: 1 solid #fff;
-        background: #889696;
-        height: 50px;
-        font-size: 16px;
-        color: #fff;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
+        input[type='text'],
+        input[type='email'] {
+            width: 100%;
+            background: #889696;
+            height: 50px;
+            font-size: 1rem;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            box-sizing: border-box;
+            border: 1px solid #463F3A;
+            border-radius: 4px;
+        }
 
-    textarea {
-        width: 100%;
-        border: 0;
-        background: #889696;
-        height: 50px;
-        font-size: 16px;
-        color: #fff;
-        padding: 20px;
-        min-height: 150px;
-        box-sizing: border-box;
-    }
+        textarea {
+            width: 100%;
+            border: 0;
+            background: #889696;
+            height: 50px;
+            font-size: 1rem;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            min-height: 150px;
+            box-sizing: border-box;
+            border: 1px solid #463F3A;
+            border-radius: 4px;
+        }
 
-    .flat-button {
-        color: #ffd700;
-        background: 0 0;
-        font: 11px;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 1px solid #ffd700;
-        float: right;
-        border-radius: 4px;
+        .flat-button {
+            width: 40%;
+            color: #ffd700;
+            background: 0 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 8px 10px;
+            border: 1px solid #ffd700;
+            border-radius: 4px;
+        }
     }
 }
