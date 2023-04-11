@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 .contact-page {
    display: block;
    text-align: center;
 
     .text-zone {
-        background-color: #889696;
+        // background-color: #A69CAC;
         border-radius: 25px;
-        border: 2px solid #463F3A;
     }
 
     .contact-form {
@@ -50,41 +51,47 @@
         input[type='text'],
         input[type='email'] {
             width: 100%;
-            background: #889696;
-            height: 50px;
-            font-size: 1rem;
-            color: #fff;
-            padding: 0.5rem 1rem;
+            font-family: 'Raleway', sans-serif;
+            background: #F5F5F5;
+            height: 60px;
+            font-size: 1.6rem;
+            color: #1F1E1F;
+            padding: 0.5rem 0.5rem;
             box-sizing: border-box;
-            border: 1px solid #463F3A;
-            border-radius: 4px;
+            border: none;
+            border-bottom: 2px solid #6E8387;
         }
 
         textarea {
             width: 100%;
+            font-family: 'Raleway', sans-serif;
             border: 0;
-            background: #889696;
-            height: 50px;
-            font-size: 1rem;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            min-height: 150px;
+            background: #F5F5F5;
+            height: 60px;
+            font-size: 1.6rem;
+            color: #1F1E1F;
+            padding: 0.5rem 0.5rem;
             box-sizing: border-box;
-            border: 1px solid #463F3A;
-            border-radius: 4px;
+            border-bottom: 2px solid #6E8387;
         }
 
         .flat-button {
             width: 40%;
-            color: #ffd700;
+            font-family: 'Raleway', sans-serif;
+            color: #6E8387;
             background: 0 0;
             font-size: 1.2rem;
             font-weight: 400;
             letter-spacing: 3px;
             text-decoration: none;
             padding: 8px 10px;
-            border: 1px solid #ffd700;
+            border: 3px solid #6E8387;
             border-radius: 4px;
+
+            &:hover {
+                color: #F5F5F5;
+                background-color: #6E8387;
+            }
         }
     }
 }
