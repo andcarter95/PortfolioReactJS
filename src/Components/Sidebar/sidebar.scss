@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 .nav-bar {
     background: #6E8387;
     width: 60px;
@@ -34,7 +36,7 @@
 
         a {
             font-size: 22px;
-            color: #F5F5F5;
+            color: #F5F5F5 ;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -59,7 +61,7 @@
 
             &:after {
                 content: '';
-                font-size: 9px;
+                font-size: 8px;
                 letter-spacing: 2px;
                 position: absolute;
                 bottom: 0;
@@ -68,6 +70,7 @@
                 text-align: center;
                 opacity: 0;
                 transition: all 0.3s ease-out;
+                font-family: 'Raleway', sans-serif;
             }
 
             &:first-child {

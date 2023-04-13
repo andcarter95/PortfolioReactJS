@@ -1,6 +1,7 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 
+
 // Components
 import Layout from './Components/Layout/layout';
 import Home from './Components/Home/home';

@@ -1,15 +1,20 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Loader from 'react-loaders';
 import './contact.scss'
 
 const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    
     const refForm = useRef()
 
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_vr1qn3h', 'template_xso1ydc', refForm.current, 'RNkxP1tQXrhTZBAXB')
+        emailjs.sendForm('service_eocy0ka', 'template_hggjqbg', refForm.current, 'RNkxP1tQXrhTZBAXB')
           .then((result) => {
               alert('Message successfully sent!');
           }, (error) => {
@@ -26,16 +31,16 @@ const Contact = () => {
                         <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
-                                    <input type='text' name='name' placeholder='Name' required/>
+                                    <input type='text' name='name' placeholder='Name' onChange={(event) => {setName(event.target.value)}} required/>
                                 </li> 
                                 <li className='half'>
-                                    <input type='email' name='email' placeholder='Email' required/>
+                                    <input type='email' name='email' placeholder='Email'onChange={(event) => {setEmail(event.target.value)}} required/>
                                 </li>
                                 <li>
-                                    <input type='text' name='subject' placeholder='Subject' required/>
+                                    <input type='text' name='subject' placeholder='Subject' onChange={(event) => {setSubject(event.target.value)}} required/>
                                 </li>
                                 <li>
-                                    <textarea name= 'message' placeholder='Message' required/>
+                                    <textarea name= 'message' placeholder='Message' onChange={(event) => {setMessage(event.target.value)}} required/>
                                 </li>
                                 <li>
                                     <input type='submit' className='flat-button' value="SEND"/>
